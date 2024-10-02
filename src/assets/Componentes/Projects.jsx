@@ -1,5 +1,6 @@
 import React from 'react';
-import './Projects.css';
+import './Styles.css';
+
 
 export const Projects = () => {
   return (
@@ -52,6 +53,26 @@ export const Projects = () => {
           </p>
           <a className="hyperlink" href="https://github.com/RaeIz/MultimediaWeb-clase2.git">github</a>
         </div>
+
+        <div className="container subBox">
+          <h3>Proyecto 4</h3>
+          <img className="project4" src="Image/project04.png" alt="proyecto 4" />
+          <p>
+            Esta página está dedicada a la presentación de la funcionalidad de las funciones de flecha dentro de un aplicativo
+            hecho con react y vite.
+          </p>
+          <a className="hyperlink" href="https://github.com/RaeIz/JAVASCRIPT_2-Martes.git">github</a>
+        </div>
+
+        <div className="container subBox">
+          <h3>Proyecto 5</h3>
+          <img className="project4" src="Image/project04.png" alt="proyecto 4" />
+          <p>
+            Esta página está dedicada a la presentación del uso apropiado de componentes dentro de React.
+          </p>
+          <a className="hyperlink" href="https://github.com/RaeIz/componentes-react.git">github</a>
+        </div>
+
       </div>
     </div>
   )

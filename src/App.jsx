@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { NavLink, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
+import Gitignore from './assets/Componentes/Gitignore'; //Importa el componente Gitignore
 import Home from './assets/Componentes/Home'; // Importa el componente Home
 import Projects from './assets/Componentes/Projects'; // Importa el componente Projects
 
@@ -26,11 +27,15 @@ function App() {
           <li>
             <NavLink to='/projects' onClick={toggleMenu}>Projects</NavLink>
           </li>
+          <li>
+            <NavLink to='/gitignore' onClick={toggleMenu}>Gitignore</NavLink>
+          </li>
         </ul>
       </nav>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/projects' element={<Projects />} />
+        <Route path='/gitignore' element={<Gitignore />} />
       </Routes>
     </Router>
   )
